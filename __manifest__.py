@@ -1,5 +1,5 @@
 {
-    "name": "Progress field project chova,
+    "name": "Progress field project chova",
     "summary": "Extra field project task",
     "author": "Jarsa",
     "website": "https://www.jarsa.com",
