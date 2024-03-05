@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+<record id="view_project_inherited_chova" model="ir.ui.view">
+        <field name="name">view.proyect.from.inherited.chova</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='recurring_task']" position="after">
+                <field name="progress"/>
+            </xpath>
+            <xpath expr="//field[@name='task_dependencies']/field/tree/field[@name='stage_id']" position="after">
+                <field name="progress_child"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
